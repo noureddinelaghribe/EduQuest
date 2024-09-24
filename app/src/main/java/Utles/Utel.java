@@ -1,0 +1,1 @@
+package Utles;public class Utel {    public static final int DATABASE_VERTION =1;    public static final String DATABASE_NAME="DB";    public static final String TABLE_NAME="T";    public static final String KEY_ID="id";    public static final String KEY_NOTE="note";    public static final String KEY_REPLAY ="replay";}
