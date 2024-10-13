@@ -43,255 +43,21 @@ public class SecreenReceiver extends BroadcastReceiver{
     @Override
     public void onReceive(Context context, Intent intent) {
         if (Intent.ACTION_SCREEN_ON.equals(intent.getAction())) {
+
             sharedPreferences = context.getSharedPreferences("Data", Context.MODE_PRIVATE);
             if (sharedPreferences.getBoolean("state",true)){
+
                 postion = sharedPreferences.getInt("progress",1);
-//                if (sharedPreferences.getBoolean("boxAlwaysShow",true)) {
-//
-//
-//                    dtf = DateTimeFormatter.ofPattern("yyyy/mm/dd");
-//                    LocalDateTime now = LocalDateTime.now();
-//                    if (dateNow != null){
-//
-//                        if (!dateNow.equals(dtf.format(now)) || sharedPreferences.getInt("countShow",1)>=countShowInDay){
-//
-//                        }
-//
-//                    }else {
-//                        dateNow = dtf.format(now);
-//
-//                        showWindow(context);
-//                        countShowInDay++;
-//                    }
-//
-//
-//
-//                    if (sharedPreferences.getInt("countShow",1)>=countShowInDay) {
-//                        showWindow(context);
-//                        countShowInDay++;
-//                    }
-//
-//
-//
-//
-//
-//                }else{
-//
-//
-//
-//
-//                }
-
-
-
-
-
                 showWindow(context);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-//            if (sharedPreferences.getBoolean("state",true)){
-//                Log.d("SecreenReceiver", "state true");
-//
-//                postion = sharedPreferences.getInt("progress",1);
-//
-//                if (sharedPreferences.getBoolean("boxSpiceficShow",false)){
-//                    Log.d("SecreenReceiver", " 3 sharedPreferences.getBoolean(\"boxSpiceficShow\",false)");
-//
-//                    dtf = DateTimeFormatter.ofPattern("yyyy/mm/dd"); //2024/11/21 = 1
-//                    LocalDateTime now = LocalDateTime.now();
-//                    if (date != null){
-//                        Log.d("SecreenReceiver", " 1 Data retrieved: do it data not null");
-//
-//                        if (!date.equals(dtf.format(now)) || sharedPreferences.getInt("countShow",1)>countShowInDay){
-//                            Log.d("SecreenReceiver", " 2 date.equals(dtf.format(now)) && sharedPreferences.getInt(countShow,1)>=countShowInDay ");
-//                            showWindow(context);
-//                            postion--;
-//                            SharedPreferences.Editor editor = sharedPreferences.edit();
-//                            editor.putInt("progress",postion);
-//                            editor.apply();
-//                            countShowSameWindow++;
-//                            if(!(sharedPreferences.getInt("countSameShow",1)>=countShowSameWindow)){
-//                                postion++;
-//                                SharedPreferences.Editor editor2 = sharedPreferences.edit();
-//                                editor2.putInt("progress",postion);
-//                                editor2.apply();
-//                                countShowSameWindow = 1;
-//                            }
-//                        }
-//
-//                    }else {
-//                        date = dtf.format(now);
-//                        Log.d("SecreenReceiver", " 5 Data retrieved: do it data null");
-//
-//                        showWindow(context);
-//                        postion--;
-//                        SharedPreferences.Editor editor = sharedPreferences.edit();
-//                        editor.putInt("progress",postion);
-//                        editor.apply();
-//                        countShowSameWindow++;
-//                        if(!(sharedPreferences.getInt("countSameShow",1)>=countShowSameWindow)){
-//                            postion++;
-//                            SharedPreferences.Editor editor2 = sharedPreferences.edit();
-//                            editor2.putInt("progress",postion);
-//                            editor2.apply();
-//                            countShowSameWindow = 1;
-//                        }
-//
-//                    }
-//
-//
-//                }else {
-//
-//                    showWindow(context);
-//
-//                }
-//
-//
-//
-//
-
-
-
-
-
-
-
-
-
-
-
-//
-//                if(sharedPreferences.getInt("countShow",1)>=countShowInDay){
-//
-//                    countShowInDay++;
-//                    Log.d("SecreenReceiver", "Data retrieved: do it countShow >= countShowInDay");
-//
-//                    if (sharedPreferences.getBoolean("boxSpiceficShow",false)){
-//
-//                        showWindow(context);
-//                        postion--;
-//                        SharedPreferences.Editor editor = sharedPreferences.edit();
-//                        editor.putInt("progress",postion);
-//                        editor.apply();
-//                        countShowSameWindow++;
-//                        if(!(sharedPreferences.getInt("countSameShow",1)>=countShowSameWindow)){
-//                            postion++;
-//                            SharedPreferences.Editor editor2 = sharedPreferences.edit();
-//                            editor2.putInt("progress",postion);
-//                            editor2.apply();
-//                            countShowSameWindow = 1;
-//                        }
-//
-//                    }else {
-//                        showWindow(context);
-//                    }
-//
-//                }else{
-//                    countShowInDay = 1;
-//                    Log.d("SecreenReceiver", "Data retrieved: do it countShowInDay = 1");
-//                }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//                Log.d("Data123", postion+" "+countShowSameWindow+"                          "+sharedPreferences.getInt("countSameShow",1));
-
-
-
-
-//            }
         }
 
     }
 
 
-    public static boolean isScreenOn() {
-        return state;
-    }
+
     public static Data data() {
         return d;
     }
@@ -305,6 +71,7 @@ public class SecreenReceiver extends BroadcastReceiver{
 
             length = sharedPreferences.getInt("length",1);
             if (postion<=length){
+                Log.d("SecreenReceiver", "Data retrieved: postion <= length "+length);
                 Reposetry repository = new Reposetry((Application) context.getApplicationContext());
                 repository.getNoteById(postion).observeForever(new Observer<Data>() {
                     @Override
@@ -325,9 +92,22 @@ public class SecreenReceiver extends BroadcastReceiver{
                     }
                 });
             }else {
-                d=null;
-                Intent i = new Intent(context, FloatingWindowService.class);
-                context.startService(i);
+
+                if (length>0){
+                    Log.d("SecreenReceiver", "Data retrieved: postion > length "+length);
+                    d=null;
+                    Intent i = new Intent(context, FloatingWindowService.class);
+                    context.startService(i);
+                }else {
+                    Log.d("SecreenReceiver", "Data retrieved: postion < length "+length);
+
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putBoolean("state",false);
+                    editor.apply();
+                }
+
+
+
             }
 
         }

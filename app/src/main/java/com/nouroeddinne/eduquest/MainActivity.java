@@ -88,32 +88,6 @@ public class MainActivity extends AppCompatActivity {
         });
         thread.start();
 
-
-//        myViewModel.getNoteById(1).observeForever(new Observer<Data>() {
-//            @Override
-//            public void onChanged(Data data) {
-//                Toast.makeText(MainActivity.this, ""+data.getNote().length(), Toast.LENGTH_SHORT).show();
-//            }
-//        });
-
-
-//
-//
-//        myViewModel.getAllNotesByName().observe(MainActivity.this,new Observer<List<Data>>() {
-//            @Override
-//            public void onChanged(List<Data> data) {
-//                for (Data d : data){
-//                    Log.d("TAG", "onChanged: "+d.getId()+" "+d.getNote()+" "+d.getReplay());
-//                }
-//            }
-//        });
-
-
-
-
-
-
-
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

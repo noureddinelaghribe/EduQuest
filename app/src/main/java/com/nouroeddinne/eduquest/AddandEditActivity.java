@@ -25,7 +25,6 @@ public class AddandEditActivity extends AppCompatActivity {
     EditText note;
     ImageView back,save;
     MyViewModel myViewModel;
-    private int id=-1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,21 +58,8 @@ public class AddandEditActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Data n ;
                 Data d = new Data(note.getText().toString(),1);
                 myViewModel.insertNote(d);
-
-//                if (note.getText().toString() != null && !note.getText().toString().isEmpty()){
-//                    if(id == -1){
-//                        n = new Data(note.getText().toString(),1);
-//                        myViewModel.insertNote(n);
-//                    }else {
-//                        n = new Data(id,note.getText().toString(),1);
-//                        myViewModel.updateNote(n);
-//                    }
-//                }else {
-//                    Toast.makeText(AddandEditActivity.this, "Empty Note", Toast.LENGTH_SHORT).show();
-//                }
 
                 Intent intent = new Intent(AddandEditActivity.this,MainActivity.class);
                 startActivity(intent);
