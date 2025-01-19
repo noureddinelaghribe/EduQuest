@@ -8,8 +8,8 @@ Here are some screenshots of theEduQuest App for Android :
 
 | Screenshot 1 | Screenshot 2 |
 |--------------|--------------|
-| ![Screenshot 1](https://raw.githubusercontent.com/noureddinne21/Calculator-iOS-16/refs/heads/main/Screenshot_2024-11-05-19-31-14-223_com.example.calculator.jpg) | ![Screenshot 2](https://raw.githubusercontent.com/noureddinne21/Calculator-iOS-16/refs/heads/main/Screenshot_2024-11-05-19-31-45-720_com.example.calculator.jpg) |
-| ![Screenshot 1](https://raw.githubusercontent.com/noureddinne21/Calculator-iOS-16/refs/heads/main/Screenshot_2024-11-05-19-31-14-223_com.example.calculator.jpg) | ![Screenshot 2](https://raw.githubusercontent.com/noureddinne21/Calculator-iOS-16/refs/heads/main/Screenshot_2024-11-05-19-31-45-720_com.example.calculator.jpg) |
+| ![Screenshot 1](https://raw.githubusercontent.com/noureddinne21/EduQuest/refs/heads/master/photo_2025-01-19_17-13-23.jpg) | ![Screenshot 2](https://raw.githubusercontent.com/noureddinne21/EduQuest/refs/heads/master/photo_2025-01-19_17-13-19.jpg) |
+| ![Screenshot 3](https://raw.githubusercontent.com/noureddinne21/EduQuest/refs/heads/master/photo_2025-01-19_17-13-15.jpg) | ![Screenshot 4](https://raw.githubusercontent.com/noureddinne21/EduQuest/refs/heads/master/photo_2025-01-19_17-13-03.jpg) |
 
 ## Features
 - **Floating Window:** Displays a floating window when the screen is turned on.
