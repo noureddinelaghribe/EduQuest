@@ -4,7 +4,7 @@ EduQuest is an Android application designed to help students manage their study 
 
 ## Screenshots
 
-Here are some screenshots of theEduQuest App for Android :
+Here are some screenshots of the EduQuest App for Android :
 
 | Screenshot 1 | Screenshot 2 |
 |--------------|--------------|
