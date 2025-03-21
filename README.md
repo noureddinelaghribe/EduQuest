@@ -41,7 +41,12 @@ Here are some screenshots of the EduQuest App for Android :
 - Knowledge of Kotlin or Java for Android development.
 - Room Database dependencies in your build.gradle file.
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/Etudtion.git
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+For technical support or feature requests, please contact:
+*[noureddinne.office@gmail.com]*
+
