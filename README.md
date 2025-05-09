@@ -2,6 +2,14 @@
 
 EduQuest is an Android application designed to help students manage their study time, track learning progress, and utilize different tools for effective study sessions. The app features a floating window that appears when the screen is turned on and allows users to interact with it easily.
 
+## Download
+
+<p align="center">
+    <a href="https://github.com/noureddinelaghribe/EduQuest/raw/refs/heads/master/EduQuest.apk">
+        <img src="https://raw.githubusercontent.com/noureddinelaghribe/WriteFlow/refs/heads/main/download_apk.png" alt="Get it on Google Play" height="80">
+    </a>
+</p>
+
 ## Screenshots
 
 Here are some screenshots of the EduQuest App for Android :
