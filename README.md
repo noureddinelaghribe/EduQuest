@@ -6,7 +6,7 @@ EduQuest is an Android application designed to help students manage their study 
 
 <p align="center">
     <a href="https://github.com/noureddinelaghribe/EduQuest/raw/refs/heads/master/EduQuest.apk">
-        <img src="https://raw.githubusercontent.com/noureddinelaghribe/WriteFlow/refs/heads/main/download_apk.png" alt="Get it on Google Play" height="80">
+        <img src="https://raw.githubusercontent.com/noureddinelaghribe/SMPOS/refs/heads/master/smpos/download_apk%20(2).png" alt="Get it on Google Play" height="80">
     </a>
 </p>
 
